@@ -1,0 +1,10 @@
+[ ! -f "$HOME/.x-cmd.root/X" ] || . "$HOME/.x-cmd.root/X" # boot up x-cmd.
+
+source ~/.config/zsh/env.zsh
+source ~/.config/zsh/plugins.zsh
+source ~/.config/zsh/aliases.zsh
+source ~/.config/zsh/mappings.zsh
+
+# x-cmd安装命令
+# eval "$(curl https://get.x-cmd.com)"
+# ln .zprofile Git/Configuation/zprofile
