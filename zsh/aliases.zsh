@@ -1,7 +1,10 @@
 # Example aliases
+alias s="x wttr mengcheng"
+
+# x-cmd
 alias la="x exa --group-directories-first -a --icons"
 alias ra="x theme use pl-hg/2"
-alias s="neofetch"
+alias t="x tldr"
 
 # 网络代理
 alias unsetpxy="networksetup -setsocksfirewallproxystate "Wi-Fi" off"
