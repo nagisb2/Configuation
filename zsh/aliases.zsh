@@ -1,5 +1,6 @@
 # Example aliases
-alias s="x wttr mengcheng"
+alias s="x fastfetch"
+alias z="source ~/.zprofile"
 
 # x-cmd
 alias la="x exa --group-directories-first -a --icons"
