@@ -8,5 +8,19 @@ function yazi() {
 	rm -f -- "$tmp"
 }
 
-
-
+#tree
+function xtree() {
+    local dir=$1
+    local indent=""
+    echo -e "${dir}"
+    for file in $(ls $dir);
+    do
+        if [ -d "$dir/$file" ]; then
+            echo -e "${indent}|---$(basename $dir/$file)/"
+            new_indent="${indent}|   "
+            xtree "$dir/$file" $new_indent
+        else
+            echo -e "${indent}|---$(basename $file)"
+        fi
+    done
+}
