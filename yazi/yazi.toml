@@ -32,6 +32,7 @@ ueberzug_offset = [ 0, 0, 0, 0 ]
 [opener]
 edit = [
 	{ run = '${EDITOR:-vim} "$@"', desc = "$EDITOR", block = true, for = "unix" },
+	{ run = '/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code "$@"', desc = "$VSCODE", block = true, for = "unix" },
 	{ run = 'code %*',    orphan = true, desc = "code",           for = "windows" },
 	{ run = 'code -w %*', block = true,  desc = "code (block)",   for = "windows" },
 ]
@@ -48,7 +49,7 @@ reveal = [
 ]
 extract = [
 	{ run = 'ya pub extract --list %*',   desc = "Extract here", for = "windows" },
-    { run = '~/.x-cmd.root/bin/x uz "$@"',desc = "Extact here(uz)",for = "unix"},
+    { run = '~/.x-cmd.root/bin/x 7za x "$@"',desc = "Extact here(7za)",for = "unix"},
 ]
 play = [
 	{ run = 'mpv --force-window "$@"', orphan = true, for = "unix" },
